@@ -24,25 +24,26 @@ export function Login() {
         <img className='login__logo' alt='Логотип' src={logo} />
         <form className="login__form" name="loginForm" noValidate>
             <div className="login__content">
-                <input 
-                type="email" 
-                className="login__input" 
-                id="email" 
-                name="email" 
-                value={email} 
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Email" 
-                required 
+                <input
+                    type="email"
+                    className="login__input"
+                    id="email"
+                    name="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Email"
+                    required
                 />
-                <input 
-                type="password" 
-                className="login__input" 
-                id="password" 
-                name="password" 
-                value={password} 
-                onChange={(e) => setPassword(e.target.value)}
-                placeholder="Пароль" 
-                required />
+                <input
+                    type="password"
+                    className="login__input"
+                    id="password"
+                    name="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    placeholder="Пароль"
+                    required
+                />
                 <span className="login__error">{isError ? "Неверный email или пароль. Попробуйте ещё раз или восстановите пароль." : ""}</span>
             </div>
             <button className={isValid ? "login__save" : "login__save_disabled"} type="button" onClick={checkValid}>ВОЙТИ</button>
