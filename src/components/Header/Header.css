@@ -6,10 +6,6 @@
     padding: 14px 30px 13px 30px;
 }
 
-.header__menu {
-    display: flex;
-}
-
 .header__button {
     background: none;
     border: none;
@@ -26,16 +22,6 @@
 
 .header__button:hover {
     opacity: 0.8;
-}
-
-.header__logo {
-    width: 89px;
-    height: 24px;
-    margin: 6px 0 7px;
-}
-
-.header__logo_center {
-    display: none;
 }
 
 .header__search {
@@ -170,14 +156,6 @@
     }
 
     .header__login-image {
-        display: block;
-    }
-
-    .header__logo {
-        display: none;
-    }
-
-    .header__logo_center {
         display: block;
     }
 
